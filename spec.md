@@ -1,4 +1,9 @@
-# spec.md — project specification template
+# spec.md — Project Specification Template
+
+**Version:** 1.0  
+**Last Updated:** —  
+**Author:** —  
+
 > **FOR THE AGENT READING THIS:**
 > This document is a spec-in-progress. Your job right now is **not to write code**.
 > Your job is to read this, research what's missing, surface options where the author
@@ -10,103 +15,112 @@
 
 ---
 
-## what is this project?
+## What Is This Project?
 
-*A few sentences. What does it do? Who uses it? What problem does it solve?
-No polish required — rough is fine. Keywords and half-thoughts are valid.*
-
-...
-
----
-
-## what does it look like when it's done?
-
-*Describe the end state. Could be a user story ("a user can..."), a rough UI sketch in
-words, a CLI interaction, an API shape — whatever makes it concrete for you.
-Partial or speculative answers are fine.*
+> A few sentences. What does it do? Who uses it? What problem does it solve?
+> No polish required — rough is fine. Keywords and half-thoughts are valid.
+> *Example: "A CLI tool that converts Barotrauma Lua scripts to C# for easier modding."*
 
 ...
 
 ---
 
-## technical stack
+## What Does It Look Like When It's Done?
 
-*What tools, languages, frameworks, and runtimes are in play?
-Only list things you've at least heard of and would be comfortable maintaining solo.
-"I don't know which database" is a valid answer — the agent will bring options.*
-
-- **Language:**
-- **Runtime / platform:**
-- **Key libraries / frameworks:**
-- **Storage:**
-- **Other infrastructure (queues, caches, etc.):**
-
----
-
-## constraints & philosophy
-
-*What rules does this project have to follow — not just technical, but practical?
-Examples: "must be runnable by one person", "no SaaS dependencies with unpredictable
-pricing", "I want to understand every line of code", "offline-first".*
+> Describe the end state. Could be a user story ("a user can..."), a rough UI sketch in
+> words, a CLI interaction, an API shape — whatever makes it concrete for you.
+> Partial or speculative answers are fine.
+> *Example: "User runs `spec init`, answers 3 prompts, gets a filled spec.md in their project root."*
 
 ...
 
 ---
 
-## quirks wishlist
+## Technical Stack
 
-*The things that don't fit neatly into requirements but matter to you anyway.
-Aesthetic preferences, implementation style, things you've always wanted to try,
-formats that feel right even if YAML would technically work fine.*
+> What tools, languages, frameworks, and runtimes are in play?
+> Only list things you've at least heard of and would be comfortable maintaining solo.
+> "I don't know which database" is a valid answer — the agent will bring options.
+
+| Component | Details |
+|-----------|---------|
+| **Language** | ... |
+| **Runtime / Platform** | ... |
+| **Key Libraries / Frameworks** | ... |
+| **Storage** | ... |
+| **Other Infrastructure** | ... |
+
+---
+
+## Constraints & Philosophy
+
+> What rules does this project have to follow — not just technical, but practical?
+> Examples: "must be runnable by one person", "no SaaS dependencies with unpredictable
+> pricing", "I want to understand every line of code", "offline-first".
+> *Example: "No external APIs that could rate-limit us. All data stays local by default."*
 
 ...
 
 ---
 
-## what I don't know yet
+## Quirks Wishlist
 
-*Explicit unknowns. Things you know you haven't figured out. The agent will treat
-each of these as a "bring options" prompt, not as a question to bounce back at you.*
-
-...
-
----
-
-## open questions (agent-generated)
-
-*This section is filled in by the agent during the research pass — not by the author.
-Each question here is something the agent couldn't resolve with research alone and
-genuinely needs a human decision on. Should stay short: if there are more than ~5
-questions here, the agent is asking too many.*
+> The things that don't fit neatly into requirements but matter to you anyway.
+> Aesthetic preferences, implementation style, things you've always wanted to try,
+> formats that feel right even if YAML would technically work fine.
+> *Example: "Config files must be TOML, not JSON. Error messages should be witty, not dry."*
 
 ...
 
 ---
 
-## assumptions (agent-generated)
+## What I Don't Know Yet
 
-*Things the agent assumed in order to produce the first draft or a code skeleton.
-Each assumption is flagged so the author can override it.
-Format: "Assumed X because Y. Override if Z."*
-
-...
-
----
-
-## known unknowns / risk flags
-
-*Things that could blow this up later. Identified by either party.
-Not a blocker for starting — just a place to park "we should think about this".*
+> Explicit unknowns. Things you know you haven't figured out. The agent will treat
+> each of these as a "bring options" prompt, not as a question to bounce back at you.
+> *Example: "I don't know if this should be a TUI or web UI."*
 
 ...
 
 ---
 
-## security & sanity pass
+## Open Questions (Agent-Generated)
 
-*Filled in just before the first commit. Not during iteration — this is its own
-dedicated pass with a different question: not "is this complete?" but
-"what could go wrong, who could abuse this, what's irreversible?"*
+> This section is filled in by the agent during the research pass — not by the author.
+> Each question here is something the agent couldn't resolve with research alone and
+> genuinely needs a human decision on. Should stay short: if there are more than ~5
+> questions here, the agent is asking too many.
+
+...
+
+---
+
+## Assumptions (Agent-Generated)
+
+> Things the agent assumed in order to produce the first draft or a code skeleton.
+> Each assumption is flagged so the author can override it.
+> Format: "Assumed X because Y. Override if Z."
+> *Example: "Assumed PostgreSQL because you mentioned ACID compliance. Override if you prefer SQLite."*
+
+...
+
+---
+
+## Known Unknowns / Risk Flags
+
+> Things that could blow this up later. Identified by either party.
+> Not a blocker for starting — just a place to park "we should think about this".
+> *Example: "Scaling beyond 10k concurrent users may require rethinking the cache layer."*
+
+...
+
+---
+
+## Security & Sanity Pass
+
+> Filled in just before the first commit. Not during iteration — this is its own
+> dedicated pass with a different question: not "is this complete?" but
+> "what could go wrong, who could abuse this, what's irreversible?"
 
 - [ ] Auth / access control considered?
 - [ ] Any irreversible operations (deletes, sends, charges)? Guarded?
@@ -115,23 +129,25 @@ dedicated pass with a different question: not "is this complete?" but
 - [ ] Dependencies vetted (not abandoned, not obviously malicious)?
 - [ ] Anything that could surprise a solo maintainer six months from now?
 
-Additional notes:
+**Additional Notes:**
 
 ...
 
 ---
 
-## out of scope (this version)
+## Out of Scope (This Version)
 
-*Things explicitly deferred. Keeps the first version focused.
-Later specs or TODO.md entries may pick these up.*
+> Things explicitly deferred. Keeps the first version focused.
+> Later specs or TODO.md entries may pick these up.
+> *Example: "User authentication, export to PDF, mobile responsiveness."*
 
 ...
 
 ---
+
 <!--
-  ## about TODO.md (not part of this spec — just a note for the workflow)
-  
+  ## About TODO.md (Not Part of This Spec — Just a Note for the Workflow)
+
   TODO.md is NOT created at spec time. It appears later, when a new spec (e.g. a
   frontend) collides with the boundary of an existing module (e.g. a backend) and
   discovers gaps or inconsistencies. Rather than immediately patching the existing
