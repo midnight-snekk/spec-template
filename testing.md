@@ -17,6 +17,13 @@ could break it. That understanding is the real output. The test file is a byprod
 things work. You are writing tests to find where they don't. These are different
 orientations, and that tension is the point.
 
+**An agent asked to write its own tests has a conflict of interest.** It knows the
+implementation — what inputs it was designed for, what edge cases it considered,
+what assumptions it made. Its tests will naturally confirm those assumptions rather
+than challenge them. They pass because they were written *around* the code, not
+*against* it. A human coming in without that context will try things the agent
+never considered, precisely because the agent "knew" they wouldn't happen.
+
 This is not a gate that slows down development. The agent keeps moving. Tests are
 written in parallel, or just after, at human pace. They catch things before the
 project accumulates enough weight that a breakage is expensive.
