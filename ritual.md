@@ -9,8 +9,9 @@
 Read these. In this order. Nothing else first.
 
 1. `spec.md` — what this project is
-2. `TODO.md` — what's been done, what's next
-3. The last three lines of your close note below
+2. `usage-warning.md` — how this workflow breaks
+3. `TODO.md` — if it exists, what's been done and what's next
+4. The last three lines of your close note below
 
 Then do the one thing written at the bottom of the last close note.
 Not the second thing. The first one.
@@ -28,6 +29,11 @@ Date:
 Done today:
 Next action (one thing, specific enough that future-you can start without thinking):
 ```
+
+**If this session revealed new patterns** (debugging approaches, doc structures, workflow improvements):
+- Create `SESSION-DIGEST.md` in project root
+- Extract what worked
+- Propose changes to spec-template
 
 That's it. No summaries. No plans. One next action, concrete enough that
 future-you can start it in under thirty seconds without having to think about

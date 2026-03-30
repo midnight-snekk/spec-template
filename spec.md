@@ -1,14 +1,13 @@
 # spec.md — Project Specification Template
 
-**Version:** 1.0  
-**Last Updated:** —  
-**Author:** —  
-
-> **FOR THE AGENT READING THIS:**
-> This document is a spec-in-progress. Your job right now is **not to write code**.
-> Your job is to read this, research what's missing, surface options where the author
-> wrote "I don't know", flag your assumptions, and ask the smallest number of questions
-> that would meaningfully unblock the next iteration of this document.
+> **Who Reads This:**
+> - **You (human):** Write this once to think through the problem
+> - **AI (agent):** Implements from this document
+> 
+> **Your job:** Write this once, then stop editing. The AI takes over.
+> 
+> **AI's job:** Read this, research what's missing, surface options where the author
+> wrote "I don't know", flag assumptions, and ask minimal questions to unblock.
 > Do not proceed to code until the author explicitly says the spec is ready.
 > "I don't know" anywhere in this document means: bring options and a recommendation,
 > not a follow-up question.
@@ -36,19 +35,13 @@
 
 ---
 
-## Technical Stack
+## Technical Stack, Moving Parts
 
-> What tools, languages, frameworks, and runtimes are in play?
+> What tools, languages, frameworks, and runtimes / libraries are in play?
 > Only list things you've at least heard of and would be comfortable maintaining solo.
 > "I don't know which database" is a valid answer — the agent will bring options.
 
-| Component | Details |
-|-----------|---------|
-| **Language** | ... |
-| **Runtime / Platform** | ... |
-| **Key Libraries / Frameworks** | ... |
-| **Storage** | ... |
-| **Other Infrastructure** | ... |
+...
 
 ---
 
@@ -145,14 +138,18 @@
 
 ---
 
-<!--
-  ## About TODO.md (Not Part of This Spec — Just a Note for the Workflow)
+## About TODO.md
 
-  TODO.md is NOT created at spec time. It appears later, when a new spec (e.g. a
-  frontend) collides with the boundary of an existing module (e.g. a backend) and
-  discovers gaps or inconsistencies. Rather than immediately patching the existing
-  module, the gap is first made explicit in a TODO.md added to the affected project.
-  This creates a deliberate pause: the extension is acknowledged and scoped before
-  it becomes its own spec iteration. The existing module is not touched until that
-  new spec has been properly developed.
--->
+**Solo projects:** TODO.md is optional. Use git history + ISSUE-style commits instead:
+```
+git log --grep="Issue encountered"  # Find all bugs and fixes
+```
+
+**Team / AI interop:** TODO.md gates extensions between specs. When a new spec
+collides with an existing module's boundary:
+1. Gap is made explicit in TODO.md
+2. New spec is developed for the extension
+3. Existing module is not touched until the new spec is complete
+
+This creates a deliberate pause: the extension is acknowledged and scoped before
+it becomes its own spec iteration.
