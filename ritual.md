@@ -8,47 +8,35 @@
 
 Read these. In this order. Nothing else first.
 
-1. `spec.md` — what this project is
-2. `usage-warning.md` — how this workflow breaks
-3. `TODO.md` — if it exists, what's been done and what's next
-4. The last three lines of your close note below
-
-Then do the one thing written at the bottom of the last close note.
-Not the second thing. The first one.
-
-If there is no close note, pick the smallest possible action and do that.
+1. `usage-warning.md` — how this meta-workflow breaks
+2. `spec.md` — what this project should be
+3. `TODO.md` — if it exists, pick a bullet point off what's next, bite-sized
 
 ---
 
 ## Before You Stop
 
-Write three lines. Here, at the bottom of this file.
-
-```
-Date:
-Done today:
-Next action (one thing, specific enough that future-you can start without thinking):
-```
+Ask your agent to write down something you plan on doing next, append TODO.md.
 
 **If this session revealed new patterns** (debugging approaches, doc structures, workflow improvements):
-- Create `SESSION-DIGEST.md` in project root
-- Extract what worked
-- Propose changes to spec-template
+- Extract what worked to a SESSION-DIGEST.md at the root of the project
+- Take a short break
+- Propose changes to spec-template, iterate a bit, integrate
 
 That's it. No summaries. No plans. One next action, concrete enough that
 future-you can start it in under thirty seconds without having to think about
 what it means.
 
-If you skip this, the next session costs an hour. You know this.
+The goal is to jump-start your future self, be it a new project or a new session.
 
 ---
 
 ## When You're Stuck
 
-You are not stuck because you're lazy or broken.
-You are stuck because the next action is too large or too vague.
+You are not stuck because you're lazy, but likely because the next action is too large or too vague.
 
 Break it in half. Then break that half in half.
+
 When it's small enough to feel almost embarrassingly easy — do that.
 
 ---
@@ -59,9 +47,3 @@ The project serves you. You don't serve the project.
 
 A session of twenty minutes that ends with a close note
 is worth more than three hours that ends in a browser tab spiral.
-
----
-
-## Close Notes
-
-<!-- add new entries at the bottom, keep old ones -->
