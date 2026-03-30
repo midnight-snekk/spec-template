@@ -2,30 +2,30 @@
 
 > This workflow has failure modes. Know them.
 > 
-> **Skim the table below. Bookmark this file. Return when stuck.**
+> **Skim the table below. Click a symptom. Jump to the fix.**
 
 ---
 
 ## Quick Reference (Symptom → Fix)
 
-| You're experiencing... | Do this now |
-|------------------------|-------------|
-| Spec feels perfect, but nothing is shipped | 2 hours max, then code |
-| Haven't written tests in multiple features | Write ONE test now |
-| Docs don't match code | Update docs to match code (code wins) |
-| Don't know what to do next | Read ritual.md close note |
-| AI keeps forgetting context | Feed it spec.md + ritual.md first |
-| TODO.md has 20+ items, all old | Quarterly review: build or delete |
-| Project isn't fun anymore | Pause without guilt |
-| Co-maintainer doesn't understand code | Rotate: you spec, they test |
-| Deploy is manual, breaks silently | Set up CI before next deploy |
-| Fighting your tools (htmx, etc.) | Draw the line early, accept limits |
+| # | You're experiencing... | Do this now |
+|---|------------------------|-------------|
+| [1](#1-spec-first-becomes-procrastination) | Spec feels perfect, but nothing is shipped | 2 hours max, then code |
+| [2](#2-tests-later-becomes-tests-never) | Haven't written tests in multiple features | Write ONE test now |
+| [3](#3-documentation-drift) | Docs don't match code | Update docs to match code (code wins) |
+| — | Don't know what to do next | Read ritual.md close note |
+| [4](#4-ai-context-is-fragile) | AI keeps forgetting context | Feed it spec.md + ritual.md first |
+| [5](#5-todomd-becomes-a-graveyard) | TODO.md has 20+ items, all old | Quarterly review: build or delete |
+| [6](#6-single-maintainer-burnout) | Project isn't fun anymore | Pause without guilt |
+| [9](#9-knowledge-monopoly) | Co-maintainer doesn't understand code | Rotate: you spec, they test |
+| [8](#8-no-cicd-means-no-safety-net) | Deploy is manual, breaks silently | Set up CI before next deploy |
+| [10](#10-tool-complexity-ceiling) | Fighting your tools (htmx, etc.) | Draw the line early, accept limits |
 
 ---
 
 ## Deep Dives
 
-### 1. Spec-First Becomes Procrastination
+### 1. Spec-First Becomes Procrastination {#1-spec-first-becomes-procrastination}
 
 **Signs:** Spec edits feel productive. "Just one more edge case" is daily. Nothing ships.
 
@@ -33,7 +33,7 @@
 
 ---
 
-### 2. "Tests Later" Becomes "Tests Never"
+### 2. "Tests Later" Becomes "Tests Never" {#2-tests-later-becomes-tests-never}
 
 **Signs:** TODO.md defers tests repeatedly. You're the only one who understands the code.
 
@@ -41,7 +41,7 @@
 
 ---
 
-### 3. Documentation Drift
+### 3. Documentation Drift {#3-documentation-drift}
 
 **Signs:** spec.md says X, code does Y. "Wait, did we implement that?"
 
@@ -49,7 +49,7 @@
 
 ---
 
-### 4. AI Context Is Fragile
+### 4. AI Context Is Fragile {#4-ai-context-is-fragile}
 
 **Signs:** Re-explaining every session. AI contradicts earlier decisions.
 
@@ -57,7 +57,7 @@
 
 ---
 
-### 5. TODO.md Becomes a Graveyard
+### 5. TODO.md Becomes a Graveyard {#5-todomd-becomes-a-graveyard}
 
 **Signs:** 20+ items, all 6+ months old. New features ignore TODO.md.
 
@@ -67,7 +67,7 @@
 
 ---
 
-### 6. Single Maintainer Burnout
+### 6. Single Maintainer Burnout {#6-single-maintainer-burnout}
 
 **Signs:** "I should work on this" feels like guilt. Maintaining, not building.
 
@@ -75,7 +75,7 @@
 
 ---
 
-### 7. SQLite Limits Are Real
+### 7. SQLite Limits Are Real {#7-sqlite-limits-are-real}
 
 **Signs:** Writes take 2+ seconds. `database is locked` errors.
 
@@ -83,7 +83,7 @@
 
 ---
 
-### 8. No CI/CD Means No Safety Net
+### 8. No CI/CD Means No Safety Net {#8-no-cicd-means-no-safety-net}
 
 **Signs:** Deploy is "git pull on server". No automated tests. Downtime is manual to detect.
 
@@ -91,7 +91,7 @@
 
 ---
 
-### 9. Knowledge Monopoly
+### 9. Knowledge Monopoly {#9-knowledge-monopoly}
 
 **Signs:** You're the only one who can debug certain issues. Can't delegate.
 
@@ -99,7 +99,7 @@
 
 ---
 
-### 10. Tool Complexity Ceiling
+### 10. Tool Complexity Ceiling {#10-tool-complexity-ceiling}
 
 **Signs:** Inline `<script>` tags multiplying. Fighting the tool.
 
