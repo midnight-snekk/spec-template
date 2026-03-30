@@ -16,16 +16,17 @@ Read these. In this order. Nothing else first.
 
 ## Before You Stop
 
+ > For the love of what's good, remove expired TODO entries, alright?
+
 Ask your agent to write down something you plan on doing next, append TODO.md.
+
+That's it. One or two next actions, concrete enough that future-you can start it
+in under thirty seconds without having to think about what it means.
 
 **If this session revealed new patterns** (debugging approaches, doc structures, workflow improvements):
 - Extract what worked to a SESSION-DIGEST.md at the root of the project
 - Take a short break
 - Propose changes to spec-template, iterate a bit, integrate
-
-That's it. No summaries. No plans. One next action, concrete enough that
-future-you can start it in under thirty seconds without having to think about
-what it means.
 
 The goal is to jump-start your future self, be it a new project or a new session.
 
