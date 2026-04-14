@@ -4,14 +4,14 @@
 
 > Don't know what to do next? Read ritual.md!
 
-- [1](#1-spec-first-becomes-procrastination)
-- [2](#2-tests-later-becomes-tests-never)
-- [3](#3-documentation-drift)
-- [4](#4-ai-context-is-fragile)
-- [5](#5-todomd-becomes-a-graveyard)
-- [6](#6-single-maintainer-burnout)
-- [7](#7-knowledge-monopoly)
-- [8](#8-tool-complexity-ceiling)
+- [1: Spec-First Becomes Procrastination](#1-spec-first-becomes-procrastination)
+- [2: "Tests Later" Becomes "Tests Never"](#2-tests-later-becomes-tests-never)
+- [3: Documentation Drift](#3-documentation-drift)
+- [4: AI Context Is Fragile](#4-ai-context-is-fragile)
+- [5: TODO.md Becomes a Graveyard](#5-todomd-becomes-a-graveyard)
+- [6: Single Maintainer Burnout](#6-single-maintainer-burnout)
+- [7: Knowledge Monopoly](#7-knowledge-monopoly)
+- [8: Tool Complexity Ceiling](#8-tool-complexity-ceiling)
 
 
 ### YMMV
