@@ -54,4 +54,4 @@ You are not stuck because you're lazy, but likely because the next action is too
 Break the task in half. Then break that half in half. When it's small enough to feel almost embarrassingly easy -- do that.
 Ask others, find who was doing the exact same thing -- how they do it?
 
-When was the last time you had something to eat? Are you hydrated? Is the oxygen alright?
+When was the last time you had something to eat? Are you hydrated? Is the oxygen alright? Please, find some time to sleep!
