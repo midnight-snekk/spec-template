@@ -29,10 +29,13 @@ Only list things you've at least heard of and would be comfortable maintaining s
 
 What rules does this project have to follow — not just technical, but practical?
 
+And more specifically: what's absolutely NOT to do?
+
 *Examples*:
 - "must be maintainable by one person"
 - "i want to understand every line of code"
 - "offline-first"
+- "as flat as possible, avoid OOP"
 
 Maybe there are things that don't fit neatly into requirements but matter to you anyway?
 Aesthetic preferences, implementation style, things you've always wanted to try,
