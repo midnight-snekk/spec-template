@@ -2,7 +2,7 @@
 
 > You opened this file. Good. That's already the first step.
 
-Did you know? `testing.md` exist! When a feature is ~80% complete (use your best judgement or ask the agent) and it's' working,
+Did you know? `testing.md` exist! When a feature is ~80% complete (use your best judgement or ask the agent) and it's working,
 then that means the time has cometh, the moment is at hand. Take a deep breath, be careful.
 
 
