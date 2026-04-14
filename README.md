@@ -13,3 +13,8 @@ Then, in the following order, do this:
 4. Agent: Human is done with the initial draft? Time to pick up spec-building from there, iterate until it is done
 
 At this point, the process should be well-underway. Shoo, go make something awesome.
+
+---
+
+Something good to read:
+- https://htmx.org/essays/yes-and/
