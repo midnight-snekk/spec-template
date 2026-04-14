@@ -1,46 +1,36 @@
 # usage-warning.md — Read This Before Starting
 
-> This workflow has failure modes. Know them.
-
 ### Quick Reference
 
-> **Skim the table below. Click a symptom. Jump to the fix.**
+> Don't know what to do next? Read ritual.md!
 
-| # | You're experiencing... | Do this now |
-|---|------------------------|-------------|
-| — | Don't know what to do next | Read ritual.md |
-| [1](#1-spec-first-becomes-procrastination) | Spec feels perfect, but nothing is shipped | 2 hours max, then code |
-| [2](#2-tests-later-becomes-tests-never) | Haven't written tests in multiple features | Write ONE test now |
-| [3](#3-documentation-drift) | Docs don't match code | Update docs to match code (code wins) |
-| [4](#4-ai-context-is-fragile) | AI keeps forgetting context | Feed it spec.md + ritual.md first |
-| [5](#5-todomd-becomes-a-graveyard) | TODO.md has 20+ items, all old | Time for a review: build or delete |
-| [6](#6-single-maintainer-burnout) | Project isn't fun anymore | Pause without guilt |
-| [9](#9-knowledge-monopoly) | Co-maintainer doesn't understand code | Rotate: you spec, they test |
-| [8](#8-no-cicd-means-no-safety-net) | Deploy is manual, breaks silently | Set up CI before next deploy |
-| [10](#10-tool-complexity-ceiling) | Fighting your tools (htmx, etc.) | Draw the line early, accept limits |
+- [1](#1-spec-first-becomes-procrastination)
+- [2](#2-tests-later-becomes-tests-never)
+- [3](#3-documentation-drift)
+- [4](#4-ai-context-is-fragile)
+- [5](#5-todomd-becomes-a-graveyard)
+- [6](#6-single-maintainer-burnout)
+- [7](#7-knowledge-monopoly)
+- [8](#8-tool-complexity-ceiling)
 
-### The Meta-Risk
+
+### YMMV
 
 **This model works because you're engaged and thoughtful.** But engagement fluctuates.
 
 **Mitigation:**
 - Design for low-energy maintenance
 - Co-maintainers should understand the model
-- It's okay to ship without tests when tired — document in ritual.md
+- It's okay to ship without tests when tired, but practice the ritual.md
 - **The project serves you. You don't serve the project.**
 
-### When To Abandon This Model
+This model is for **building something long-term**, always use common sense while wearing this harness!
 
-- **Prototype** — spec-less experimentation is faster
-- **Solo, and you know it** — knowledge monopoly is fine
-- **Unknown problem** — code first, spec later
-- **For fun** — discipline is optional
+For small, one-off prototype scripts -- avoid implementing **code** through AI,
+use this harness for just the brainstorming planning bits.
 
-This model is for **building something that lasts**. If that's not your goal, don't pretend it is.
+Harness for the sake of it is an optional fetish, experimentation and exploration is fun!
 
----
-
-## Deep Dives
 
 ### 1. Spec-First Becomes Procrastination {#1-spec-first-becomes-procrastination}
 
@@ -48,58 +38,51 @@ This model is for **building something that lasts**. If that's not your goal, do
 
 **Fix:** 2 hours max on spec, then code. The spec is a tool, not an artifact.
 
+
 ### 2. "Tests Later" Becomes "Tests Never" {#2-tests-later-becomes-tests-never}
 
 **Signs:** TODO.md defers tests repeatedly. You're the only one who understands the code.
 
 **Fix:** One adversarial test per feature. Not for coverage — for *your* understanding.
 
+
 ### 3. Documentation Drift {#3-documentation-drift}
 
-**Signs:** spec.md says X, code does Y. "Wait, did we implement that?"
+**Signs:** Spec says one thing, code does another. "Wait, did we implement that?"
 
-**Fix:** Update docs as part of the feature commit. Code is source of truth.
+**Fix:** Update docs as part of the feature commit. Code and git log is your source of truth.
+
 
 ### 4. AI Context Is Fragile {#4-ai-context-is-fragile}
 
-**Signs:** Re-explaining every session. AI contradicts earlier decisions.
+**Signs:** Re-explaining every session? AI contradicts earlier decisions and nobody knows what's written, anymore?
 
-**Fix:** Feed spec.md + ritual.md at session start. Update docs before ending session.
+**Fix:** Humans, read ritual.md at session start. Agents, read the spec! It can and will grow large enough for human consumption, so make a human-readable README.md for a project.
+
 
 ### 5. TODO.md Becomes a Graveyard {#5-todomd-becomes-a-graveyard}
 
 **Signs:** 20+ items, all 6+ months old. New features ignore TODO.md.
 
-**Fix:** Quarterly review. Build it, or delete it. Keep under 10 items.
+**Fix:** Regular review. Build it, or delete it. Keep it small or do away with TODO.md, convert to issue-commits.md.
 
-**Solo projects:** Use git history + ISSUE-style commits instead of TODO.md.
 
 ### 6. Single Maintainer Burnout {#6-single-maintainer-burnout}
 
-**Signs:** "I should work on this" feels like guilt. Maintaining, not building.
+**Signs:** "I should work on this" feels like guilt, you procrastinate away from the project.
 
 **Fix:** Explicit maintenance mode is okay. Small features when you have energy. It's okay to stop.
 
-### 7. SQLite Limits Are Real {#7-sqlite-limits-are-real}
 
-**Signs:** Writes take 2+ seconds. `database is locked` errors.
-
-**Fix:** Monitor slow queries (>500ms). Migrate to PostgreSQL or cap concurrency.
-
-### 8. No CI/CD Means No Safety Net {#8-no-cicd-means-no-safety-net}
-
-**Signs:** Deploy is "git pull on server". No automated tests. Downtime is manual to detect.
-
-**Fix:** Set up CI before first deploy. Run tests on push. Health check monitored.
-
-### 9. Knowledge Monopoly {#9-knowledge-monopoly}
+### 7. Knowledge Monopoly {#7-knowledge-monopoly}
 
 **Signs:** You're the only one who can debug certain issues. Can't delegate.
 
 **Fix:** Rotate: you spec, they test. Both write tests for code the other wrote.
 
-### 10. Tool Complexity Ceiling {#10-tool-complexity-ceiling}
 
-**Signs:** Inline `<script>` tags multiplying. Fighting the tool.
+### 8. Tool Complexity Ceiling {#8-tool-complexity-ceiling}
 
-**Fix:** Draw the line early. htmx for CRUD, Alpine.js for interactivity, React only if you must.
+**Signs:** Are you fighting the tool? Idiomatic is impractical?
+
+**Fix:** Draw the line early, use tools that you can understand. Are your tools meant for this job?
