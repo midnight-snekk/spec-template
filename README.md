@@ -11,6 +11,5 @@ Then, in the following order, do this:
 2. Human: read **`ritual.md`**, the session begins
 3. Human: read **`spec.md`**, then start writing the spec
 4. Agent: Human is done with the initial draft? Time to pick up spec-building from there, iterate until it is done
-5. Both Agent and Human: Spec feels ready for a first initial implementation? Time for a plan.md your implementation (a human-friendly overview).
 
 At this point, the process should be well-underway. Shoo, go make something awesome.
