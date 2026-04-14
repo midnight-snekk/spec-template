@@ -13,6 +13,7 @@
 - [7: Knowledge Monopoly](#7-knowledge-monopoly)
 - [8: Tool Complexity Ceiling](#8-tool-complexity-ceiling)
 
+---
 
 ### YMMV
 
@@ -31,6 +32,7 @@ use this harness for just the brainstorming planning bits.
 
 Harness for the sake of it is an optional fetish, experimentation and exploration is fun!
 
+---
 
 ### 1. Spec-First Becomes Procrastination
 <!-- {#1-spec-first-becomes-procrastination} -->
