@@ -3,6 +3,7 @@
 > AGENT WARNING: Do not proceed to code until the human explicitly says the spec is ready. Remove this warning after spec reaches its first working implementation.
 >
 > **Human's job:** Write this once, then stop editing. The AI takes over.
+>
 > **AI's job:** Read this, research what's missing, surface options where the author
 > wrote "I don't know", flag assumptions, and ask minimal questions to unblock.
 
@@ -14,6 +15,7 @@ A few sentences. What does it do? Who uses it? What problem does it solve?
 No polish required — rough is fine. Keywords and half-thoughts are valid.
 
 *Example: "A CLI tool that converts Barotrauma Lua scripts to C# for easier modding."*
+
 *Example: "User runs `spec init`, answers 3 prompts, gets a filled spec.md in their project root."*
 
 
