@@ -1,4 +1,4 @@
-## ISSUE-style commit convention
+# issue-commit.md -- ISSUE-style commit convention
 
 The commit message **is** the issue tracker. Git log / diff tells us what changed and when, but doesn't tell us why right away.
 
