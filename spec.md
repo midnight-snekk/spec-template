@@ -1,10 +1,10 @@
-# spec.md — Project Specification
+# spec.md -- Project Specification
 
-> WARNING: Do not proceed to code until the author explicitly says the spec is ready. Remove this warning after spec reaches it's first working implementation.
-
-**Human's job:** Write this once, then stop editing. The AI takes over.
-**AI's job:** Read this, research what's missing, surface options where the author
-wrote "I don't know", flag assumptions, and ask minimal questions to unblock.
+> AGENT WARNING: Do not proceed to code until the human explicitly says the spec is ready. Remove this warning after spec reaches it's first working implementation.
+>
+> **Human's job:** Write this once, then stop editing. The AI takes over.
+> **AI's job:** Read this, research what's missing, surface options where the author
+> wrote "I don't know", flag assumptions, and ask minimal questions to unblock.
 
 ---
 
